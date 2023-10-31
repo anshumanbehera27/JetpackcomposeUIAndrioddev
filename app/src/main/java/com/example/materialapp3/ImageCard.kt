@@ -3,6 +3,7 @@
 package com.example.materialapp3
 
 import android.accounts.AuthenticatorDescription
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRow
@@ -21,6 +22,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -43,7 +45,7 @@ fun ImageCard(
     Card (
         modifier = Modifier ,
         colors =  CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant,
+            containerColor = colorScheme.surfaceVariant,
             ),
         shape = MaterialTheme.shapes.large
     )
@@ -70,9 +72,9 @@ fun ImageCard(
                 mainAxisSize = SizeMode.Wrap
             ) {
 
-                AssistChip(onClick = { },
+                AssistChip(onClick = {},
                     colors = AssistChipDefaults.assistChipColors( 
-                        leadingIconContentColor = MaterialTheme.colorScheme.surfaceVariant ) ,
+                        leadingIconContentColor = colorScheme.surfaceVariant ) ,
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Outlined.FavoriteBorder,
@@ -86,7 +88,7 @@ fun ImageCard(
 
                 AssistChip(onClick = { },
                     colors = AssistChipDefaults.assistChipColors(
-                        leadingIconContentColor = MaterialTheme.colorScheme.surfaceVariant ) ,
+                        leadingIconContentColor = colorScheme.surfaceVariant ) ,
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Outlined.Share,
