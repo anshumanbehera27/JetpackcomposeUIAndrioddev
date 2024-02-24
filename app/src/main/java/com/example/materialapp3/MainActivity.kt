@@ -95,19 +95,22 @@ fun Content(navController:NavController) {
                     }
                 },
                 topBar = {
-                    TopAppBar(title = { Text(text = "Content App")} ,
-                        colors = TopAppBarDefaults.smallTopAppBarColors(
-                            containerColor = MaterialTheme.colorScheme.surfaceVariant ,
-                            titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant)
-                    )
+//                    TopAppBar(title = { Text(text = "Content App")} ,
+//                        colors = TopAppBarDefaults.smallTopAppBarColors(
+//                            containerColor = MaterialTheme.colorScheme.surfaceVariant,
+//                            titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant)
+//
+//                    )
+                    OptionMenu()
+
 
                 },
             ) { values ->
                 LazyColumn(contentPadding = values){
                     items(20){
                         ImageCard(
-                            title = "Bacon ipsum",
-                            description = "Bacon ipsum dolor amet pork shankle beef andouille ball tip. Meatball corned beef swine, strip steak bacon jerky doner tongue biltong pork loin drumstick sausage hamburger burgdoggen." ,
+                            title = "Energize Your Workout Routine",
+                            description = "Are you ready to take your fitness journey to the next level? With our expertly crafted workouts, you'll discover the power of consistency and dedication. From high-intensity interval training to soothing yoga flows, there's something for everyone. Join us and unlock your full potential today!" ,
                             modifier =  Modifier.padding(16.dp))
 
 
